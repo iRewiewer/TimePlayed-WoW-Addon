@@ -5,6 +5,7 @@ An addon for [World of Warcraft](https://worldofwarcraft.blizzard.com/en-us/) th
 
 ## Commands
 /timeplayed, /tp - Show the default bar with long names
+
 /tpshort, /tps - Show the bar with short names
 
 ## Usage
