@@ -21,6 +21,8 @@ local minutesPlayed = -1;
 local hoursPlayed = -1;
 local daysPlayed = -1;
 
+local popupSound = 416; -- murloc aggro
+
 local debugging = false
 
 --------------------------------------
@@ -146,6 +148,7 @@ local function UpdateApp()
 
         if minutes % reminderInterval == 0 and minutes ~= 0 and alreadyShown == false then
             alreadyShown = true;
+            PlaySound(popupSound);
             AppUI:SetShown(true);
         else
             if alreadyShown == true and minutes % reminderInterval ~= 0 then
@@ -162,6 +165,7 @@ SLASH_TIME_PLAYED1 = "/tp";
 SLASH_TIME_PLAYED2 = "/timeplayed";
 SlashCmdList.TIME_PLAYED = function()
     AppUI:SetShown(true);
+    PlaySound(popupSound);
     useShortName = false;
 end
 
@@ -169,6 +173,7 @@ SLASH_TIME_PLAYED_SHORT1 = "/tps";
 SLASH_TIME_PLAYED_SHORT2 = "/tpshort";
 SlashCmdList.TIME_PLAYED_SHORT = function()
     AppUI:SetShown(true);
+    PlaySound(popupSound);
     useShortName = true;
 end
 
