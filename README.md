@@ -2,6 +2,7 @@
 
 ## Description
 An addon for [World of Warcraft](https://worldofwarcraft.blizzard.com/en-us/) that shows you how long you've been playing since logging in. It resets on logout.
+It pops up every hour to remind you how long you've been playing.
 
 ## Commands
 /timeplayed, /tp - Show the default bar with long names
